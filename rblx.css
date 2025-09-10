@@ -1,0 +1,309 @@
+body{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    margin-bottom: 168px;
+    font-family: Builder Sans, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #191a1f !important;
+}
+.image-cont{
+    background-image: url("rbbg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index: 0;
+    background-position-y: -63px;
+}
+.sign-up-container{
+    margin: 0 auto;
+    box-sizing: initial;
+    padding: 15px;
+    max-width: 435px;
+    border-radius: 8px;
+    background: #121215;
+    z-index: 1;
+    height:533px;
+    width: 465px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.overlay{
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-image:url("overlay.png");
+    z-index: 1;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+.paragraph{
+    font-weight: 700;
+    margin-top: 7px;
+    font-size: 19px;
+    color:#f7f7f8;
+    margin-bottom: 25px;
+}
+.head{
+    z-index: 10;
+    margin-bottom:1205px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    font-size: 64px;
+    align-items: center;
+    font-weight: 1000;
+    justify-content: space-between;
+    width:260px;
+    font-family:fonts/cusfont;
+    margin-right: 60px;
+    color:#f7f7f8;
+    margin-top: 10px;
+}
+.outer{
+    width:12px;
+    height:12px;
+    border-style: solid;
+    border-width: 16px;
+    transform: rotate(14deg);
+    margin:7px;
+}
+@font-face{
+    font-family :'cusfont';
+    src:url('Gotham Ultra.otf');
+}
+.head-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+select{
+    padding-left: 7px;
+}
+.birthday-container{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-radius: 8px;
+    border-color:#707070;
+}
+#the-months,.the-days,.year{
+    background-color: rgba(208, 217, 251, .08);
+    color: #d5d7dd;
+    font-size: 16px;
+    background-position-y: 5px;
+    border:none;
+    height:40px;
+    background-image: url("sv images/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    appearance: none;
+    background-position-x:calc(100% - 2px) ;
+    background-position-y:calc(100% - 50%) ;
+    font-family: Helvetica Neue, Helvetica, Arial, Lucida Grande, sans‑serif;
+}
+#the-months{
+   flex:1.7;
+   background-size: 18%;
+   border-right-style: solid;
+   border-width: 1px;
+   border-color: #707070;
+}
+.the-days{
+    flex:1.25;
+    border-right-style: solid;
+    border-color:#707070 ;
+    border-width: 1px;
+}
+.year{
+    flex:1.25;
+}
+.inputs{
+    width: 95%;
+}
+.birth,.gender{
+    font-family: Builder Sans, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.all-birth-cont{
+    height:50%;
+    width: 100%;
+}
+.para-cont{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.username-cont,.password-cont,.gender-cont{
+    width:100%;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.username,.password{
+    width:97%;
+    height:34px;
+    border-radius: 8px;
+    background-color: rgba(208, 217, 251, .08);
+    color: #d5d7dd;
+    border-style: solid;
+    border-width: 1px;
+    padding-left:10px;
+    padding-top: 3px;
+    margin-top: 4px;
+}
+.username::placeholder,.password::placeholder{
+    color: #bbbcc2;
+    font-size:16px;
+    font-weight: 100;
+}
+.user,.pass{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.password-cont{
+    height:65px;    
+}
+.female,.male{
+    width:50%;
+    height:43px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #707070;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(208, 217, 251, .08);
+    cursor: pointer;
+}
+.male{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left-style: none;
+    border-top-left-radius:0;
+    border-bottom-left-radius: 0;
+    background-image: url("png files/maleoff.png");
+    background-repeat: no-repeat;
+    background-size: 11.5%;
+    background-position-x: 90px;
+    background-position-y: 8px;
+}
+.female{
+    background-image: url("png files/femaleoff.png");
+    background-repeat: no-repeat;
+    background-size: 11.5%;
+    background-position-x: 90px;
+    background-position-y: 8.5px;
+}
+.gender-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genders{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-top: 10px;
+}
+.label-cont{
+    display:flex;
+    width:100%;
+    justify-content: start;
+}
+.afterClickFe,.afterClickMa{
+    border-color:white;
+    border-width: 1.9px;
+}
+.toOn{
+    background-image: url("png files/femaleon.png");
+}
+.afterClickMa{
+    border-left-style:solid;
+}
+.maToOn{
+    background-image: url("png files/maleon.png");
+}
+.pandp-cont{
+    z-index:12;
+    margin-top:103px;
+    color: #fff;
+    font-size: 14px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2rem;
+    display:flex;
+    flex-direction:row;
+}
+.check{
+    min-width: 19px;
+    height:19px;
+    margin-right: 8px;
+    margin-top: 0;
+    border-width: 0.5px;
+    border-style:solid;
+    border-radius: 2px;
+    border-color: #b4b2b2;
+    background-color: rgba(69, 69, 70, 0.8); ;
+}
+.sign-up{
+    width:100%;
+    margin-top: 20px;
+    height:33px;
+    border-radius: 8px;
+    border:none;
+    font-size: 14px;
+    font-weight: 600;
+    color:rgb(58, 58, 58);
+    background-color: #888787;
+    text-align: center;
+}
+.the-linked,.linked-pri{
+    color:rgb(114, 114, 247);
+}
+.toBold{
+    font-weight: 600;
+}
+@media (min-width:601px) {
+    .image-cont{
+        background-size: 169%;
+        background-position: center top;
+    }
+}
+
+@media (min-width:800px){
+    .image-cont{
+        background-size: 100%;
+        background-position-y:-65px;
+    }
+}
+@media (max-width:600px){
+    .image-cont{
+        background-size:250%;
+
+    }
+}
