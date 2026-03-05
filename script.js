@@ -50,4 +50,5 @@ let wnActive = () => {
 
 let wnActivePri = () => {
     linkedPrivacy.classList.add('toBold');
+
 }
